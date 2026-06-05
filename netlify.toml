@@ -1,0 +1,38 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/api/models"
+  to = "/.netlify/functions/models"
+  status = 200
+
+[[redirects]]
+  from = "/api/generate"
+  to = "/.netlify/functions/generate"
+  status = 200
+
+[[redirects]]
+  from = "/api/generate-full-exam"
+  to = "/.netlify/functions/generate-full-exam"
+  status = 200
+
+[[redirects]]
+  from = "/api/grade-essay"
+  to = "/.netlify/functions/grade-essay"
+  status = 200
+
+[[redirects]]
+  from = "/api/submit-exam"
+  to = "/.netlify/functions/submit-exam"
+  status = 200
+
+[[redirects]]
+  from = "/api/get-exam"
+  to = "/.netlify/functions/get-exam"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
